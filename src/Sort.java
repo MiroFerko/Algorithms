@@ -14,7 +14,7 @@ public class Sort {
         System.out.println("Unsorted ArrayList: " + numbers);
 
         // search for position of specific int
-        int pos = Collections.binarySearch(numbers, 4);
+        int pos = Collections.binarySearch(numbers, 1);
         System.out.println("The position of ... is " + pos);
 
         // shuffle list
