@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Sort {
+public abstract class Sort {
 
     public static void main(String[] args) {
 
@@ -13,10 +13,6 @@ public class Sort {
         numbers.add(1);
         System.out.println("Unsorted ArrayList: " + numbers);
 
-        // search for position of specific int
-        int pos = Collections.binarySearch(numbers, 1);
-        System.out.println("The position of ... is " + pos);
-
         // shuffle list
         Collections.shuffle(numbers);
         System.out.println("ArrayList using shuffle: " + numbers);
@@ -26,8 +22,8 @@ public class Sort {
         System.out.println("Sorted ArrayList: " + numbers);
 
         // search for position specific int
-        int position = Collections.binarySearch(numbers, 1);
-        System.out.println("The position of 4 is " + position);
+        int position = Collections.binarySearch(numbers, 4);
+        System.out.println("The position of 4 is " + (position + 1));
 
         // reverse list
         Collections.reverse(numbers);
@@ -50,6 +46,5 @@ public class Sort {
         // copy numbers to newNumbers
         Collections.copy(newNumbers, numbers);
         System.out.println("ArrayList2 using copy(): " + newNumbers);
-
     }
 }
