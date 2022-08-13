@@ -46,5 +46,16 @@ public abstract class Sort {
         // copy numbers to newNumbers
         Collections.copy(newNumbers, numbers);
         System.out.println("ArrayList2 using copy(): " + newNumbers);
+
+        // Using min()
+        int min = Collections.min(numbers);
+        System.out.println("Minimum Element: " + min);
+
+        // Using max()
+        int max = Collections.max(numbers);
+        System.out.println("Maximum Element: " + max);
+
+        int count = Collections.frequency(numbers, 2);
+        System.out.println("Count of 2: " + count);
     }
 }
