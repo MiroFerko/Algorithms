@@ -4,10 +4,6 @@ public abstract class Sort {
     public static void main(String[] args) {
         ArrayList<Integer> numbers = new ArrayList<>();
 
-
-
-
-
         numbers.add(4);
         numbers.add(2);
         numbers.add(3);
